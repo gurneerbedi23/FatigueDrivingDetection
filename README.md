@@ -1,9 +1,4 @@
-## This folder contains the code and files associated with the LSTM model that detects the drivers fatigue 
-Training was done in Google Colab
+FATIGUE DRIVING DETECTION
 
-[model_dense300](model_dense300): Final LSTM model <br>
-[LSTM_200.xlsx](LSTM_200.xlsx): Data used to train the model <br>
-[data.zip](data.zip): raw data obtained after annotating vidoes <br>
-[lstm_preprocess.py](lstm_preprocess.py): Python code used to preprocess data <br>
-[train_FatigueLSTM.py](train_FatigueLSTM.py): Python code for training model <br>
+One of the greatest risk factors for fatal car accidents is fatigue driving. In fact, 10% of car accidents are caused by fatigue driving. As a result, fatigue driving is a big threat to people’s safety and in an effort to reduce or eliminate fatigue driving, this project focuses on building a fatigue driving detection system using deep learning. This is achieved by implementing  YOLO and LSTM models which detect a driver’s facial features and fatigue level respectively. The CEW and YawDD datasets were used in this project and a total of 800 images were labelled (state of eyes, mouth, and face) in order to train the YOLO model. The Darknet Framework, which uses transfer learning to update and save the best weights of the YOLO model, was then used to assess the model predictions for the best results. Four metrics were used to do this: precision, recall, F1-score, and the mean average precision (mAP). The model performed relatively well in all 4 metrics with the mAP being 95.78%. Then a LSTM model was created which can progressively track how fatigued the driver is using time series analysis. The final design successfully recognized indicators of fatigue in a driver’s face and outputted the level (1 to 4) of fatigue that the driver was experiencing.
 
