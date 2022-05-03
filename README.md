@@ -1,8 +1,9 @@
-## This folder contains the code and files for the LSTM models used in this project 
-### different LSTM models were developed, one for fatigue detection, one for eye closure detection and own for yawn detection
-The folders contain the final files along with the training code/data 
+## This folder contains the code and files associated with the LSTM model that detects the drivers fatigue 
+Training was done in Google Colab
 
-[Eye_Closure_Detect](Eye_Closure_Detect): LSTM Model for Eye closure detection <br>
-[Fatigue_Detect](Fatigue_Detect): Model for Fatigue Detection <br>
-[Yawn_Detect](Yawn_Detect): Model for yawn detection <br>
+[model_dense300](model_dense300): Final LSTM model <br>
+[LSTM_200.xlsx](LSTM_200.xlsx): Data used to train the model <br>
+[data.zip](data.zip): raw data obtained after annotating vidoes <br>
+[lstm_preprocess.py](lstm_preprocess.py): Python code used to preprocess data <br>
+[train_FatigueLSTM.py](train_FatigueLSTM.py): Python code for training model <br>
 
